@@ -90,7 +90,7 @@ assert(isEquivalent(_.map(array, function(item){return parseInt(item) + 1}), [6,
 assert(isEquivalent(_.map(array, plusOne), [6, 2, 3, 4, 5, 6]))
 
 // Test for invoke():
-// assert(isEquivalent(_.invoke([[2, 3, 5, 4, 1, 7, 6], [6, 3, 2, 1, 4, 5, 7]], 'sort'), [[ 1, 2, 3, 4, 5, 6, 7 ], [ 1, 2, 3, 4, 5, 6, 7 ]]))
+assert(isEquivalent(_.invoke([[2, 3, 5, 4, 1, 7, 6], [6, 3, 2, 1, 4, 5, 7]], 'sort'), [[ 1, 2, 3, 4, 5, 6, 7 ], [ 1, 2, 3, 4, 5, 6, 7 ]]))
 
 // Test for filter(): 
 assert(isEquivalent(_.filter(object, function(item) {
